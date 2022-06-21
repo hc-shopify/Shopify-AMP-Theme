@@ -258,6 +258,42 @@
         "settings": {
         }
       },
+      "collection-row-1": {
+        "type": "collection-rows",
+        "disabled": true,
+        "settings": {
+          "title": "Featured collection",
+          "home_featured_row": "",
+          "grid": 4,
+          "rows": 1,
+          "product_show_saved_amount": true,
+          "product_show_compare_at_price": false
+        }
+      },
+      "collection-row-2": {
+        "type": "collection-rows",
+        "disabled": true,
+        "settings": {
+          "title": "Featured collection",
+          "home_featured_row": "",
+          "grid": 4,
+          "rows": 1,
+          "product_show_saved_amount": true,
+          "product_show_compare_at_price": false
+        }
+      },
+      "collection-row-3": {
+        "type": "collection-rows",
+        "disabled": true,
+        "settings": {
+          "title": "Featured collection",
+          "home_featured_row": "",
+          "grid": 4,
+          "rows": 1,
+          "product_show_saved_amount": true,
+          "product_show_compare_at_price": false
+        }
+      },
       "collection-template": {
         "type": "collection-template",
         "settings": {
@@ -268,6 +304,17 @@
           "product_show_saved_amount": true,
           "product_reviews_enable": false,
           "enable_sidebar": true
+        }
+      },
+      "1511028103602": {
+        "type": "featured-product",
+        "settings": {
+          "section_margin": true,
+          "color_bg": "",
+          "section_border": "top-border bottom-border",
+          "featured_product": "baby-socks",
+          "head_text_size": "h3_size",
+          "head_text_align": "text-align-center"
         }
       },
       "product-template": {
@@ -291,10 +338,150 @@
           "social_sharing_blog": true,
           "show_author": false
         }
+      },
+      "1512668120247": {
+        "type": "image-with-text",
+        "settings": {
+          "section_margin": false,
+          "section_border": "fullborder",
+          "block_margin": "margin-15pert",
+          "image": "shopify:\/\/shop_images\/Organic_Cotton4.jpg",
+          "image_mob": "shopify:\/\/shop_images\/Organic_Cotton4.jpg",
+          "layout": "float-right",
+          "color_img_bg": "",
+          "title": "Naturally Colored Organic Cotton",
+          "text": "<p>While commercial cotton fibres are all an off-white yellow colour, we are able to grow cotton that is naturally red, brown and even green.<\/p>\n<p><\/p>\n<p>This means that our socks are completely chemical free because they don&rsquo;t have to be dyed (modern socks, even white ones, must be dyed to produce their colour).<\/p>\n<p>PURE&reg; baby socks are ideal for babies, whose sensitive skin can be irritated by chemicals used in the&nbsp;dyeing&nbsp;process.<\/p>",
+          "button_label": "df",
+          "button_link": "",
+          "color_text_bg": "pre_bg_color0",
+          "head_text_size": "h4_size",
+          "head_text_align": "text-align-center",
+          "head_text_color": "title_text_color",
+          "body_text_size": "p_size",
+          "body_text_align": "text-align-left"
+        }
+      },
+      "1512836617277": {
+        "type": "featured-content",
+        "disabled": true,
+        "settings": {
+          "section_margin": true,
+          "color_text_bg": "pre_bg_color0",
+          "section_border": "top-border",
+          "section_title": "Talk about your brand",
+          "head_text_size": "h2_size",
+          "head_text_align": "text-align-center",
+          "head_text_color": "title_text_color",
+          "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+          "body_text_size": "p_size",
+          "body_text_align": "text-align-left"
+        }
+      },
+      "1512938894398": {
+        "type": "featured-text-columns",
+        "blocks": {
+          "1512938894398-0": {
+            "type": "text",
+            "settings": {
+              "home-features-icon": "&#x2600;",
+              "home-features-title": "Free Delivery",
+              "home-features-content": "<p>You can get&nbsp;<strong>free delivery&nbsp;<\/strong>on:<\/p>\n<p>All uk orders over &pound;15; All&nbsp;Europe orders over&nbsp;&pound;20; Rest of World orders over&nbsp;&pound;40<\/p>",
+              "width": "col-md-4",
+              "head_text_size": "h4_size",
+              "head_text_align": "text-align-left",
+              "head_text_color": "title_text_color",
+              "body_text_size": "p_size",
+              "body_text_align": "text-align-left"
+            }
+          },
+          "1512938894398-1": {
+            "type": "text",
+            "settings": {
+              "home-features-icon": "&#9748;",
+              "home-features-title": "Free Returns",
+              "home-features-content": "<p>Items that are in the condition&nbsp;you received them in will be accepted for up to<strong>&nbsp;4 WEEKS<\/strong>.<\/p>\n<p>Please return to: Babysocks, 24 Priory Fields, Watford, WD17 4YP, UK<\/p>",
+              "width": "col-md-4",
+              "head_text_size": "h4_size",
+              "head_text_align": "text-align-left",
+              "head_text_color": "title_text_color",
+              "body_text_size": "p_size",
+              "body_text_align": "text-align-left"
+            }
+          },
+          "1512938894398-2": {
+            "type": "text",
+            "settings": {
+              "home-features-icon": "&#x2615;",
+              "home-features-title": "Contact Us",
+              "home-features-content": "<p>Customer Service： care@babysocks.uk<\/p>\n<p><\/p>\n<p>Wholesale and affiliate: sales@babysocks.uk<\/p>",
+              "width": "col-md-4",
+              "head_text_size": "h3_size",
+              "head_text_align": "text-align-left",
+              "head_text_color": "title_text_color",
+              "body_text_size": "p_size",
+              "body_text_align": "text-align-left"
+            }
+          }
+        },
+        "block_order": [
+          "1512938894398-0",
+          "1512938894398-1",
+          "1512938894398-2"
+        ],
+        "settings": {
+          "title": "",
+          "section_margin": true,
+          "color_text_bg": "",
+          "section_border": "top-border",
+          "head_text_size": "h1_size",
+          "head_text_align": "text-align-center",
+          "head_text_color": "title_text_color",
+          "icon_width": "col-3"
+        }
+      },
+      "1513034544483": {
+        "type": "image-with-text",
+        "settings": {
+          "section_margin": false,
+          "section_border": "noborder",
+          "block_margin": "margin-15pert",
+          "image": "shopify:\/\/shop_images\/hand-linked-toe.gif",
+          "image_mob": "shopify:\/\/shop_images\/hand-linked-toe.gif",
+          "layout": "float-left",
+          "color_img_bg": "",
+          "title": "Hand-Linked Toe: Seamless for Babies",
+          "text": "<p>To ensure maximal comfort, our organic cotton baby socks use hand-linked toe seams.&nbsp;To link toe seams with only&nbsp;<em><strong>a single thread<\/strong><\/em>, our trained workers must be very skilled and attentive.&nbsp;<\/p>\n<p><\/p>\n<p>PURE&reg; baby socks with hand-linked toe feel completely&nbsp;<strong>seamless<\/strong>&nbsp;and so are much more comfortable for than ordinary socks.&nbsp;&nbsp;<\/p>\n<p>Hand-linked toe socks are essential for your baby&rsquo;s comfort. Once your baby experiences the luxury of seamless socks, they&rsquo;ll feel like they&rsquo;re walking on air!<\/p>",
+          "button_label": "",
+          "button_link": "",
+          "color_text_bg": "pre_bg_color0",
+          "head_text_size": "h4_size",
+          "head_text_align": "text-align-center",
+          "head_text_color": "title_text_color",
+          "body_text_size": "p_size",
+          "body_text_align": "text-align-left"
+        }
+      },
+      "1514768881042": {
+        "type": "featured-blog",
+        "settings": {
+          "section_margin": false,
+          "section_border": "noborder",
+          "blog": "baby-socks"
+        }
       }
     },
     "content_for_index": [
-
+      "slideshow",
+      "1512836617277",
+      "1512668120247",
+      "1513034544483",
+      "collection-list",
+      "collection-row-1",
+      "collection-row-2",
+      "collection-row-3",
+      "1511028103602",
+      "1514768881042",
+      "1512938894398"
     ]
   },
   "presets": {
@@ -416,10 +603,38 @@
           ],
           "settings": {
           }
+        },
+        "collection-row-1": {
+          "type": "collection-rows",
+          "settings": {
+            "home_featured_row": "",
+            "grid": 4,
+            "rows": 1
+          }
+        },
+        "collection-row-2": {
+          "type": "collection-rows",
+          "settings": {
+            "home_featured_row": "",
+            "grid": 4,
+            "rows": 1
+          }
+        },
+        "collection-row-3": {
+          "type": "collection-rows",
+          "settings": {
+            "home_featured_row": "",
+            "grid": 4,
+            "rows": 1
+          }
         }
       },
       "content_for_index": [
-
+        "slideshow",
+        "collection-list",
+        "collection-row-1",
+        "collection-row-2",
+        "collection-row-3"
       ]
     },
     "Light": {
@@ -521,14 +736,60 @@
           "settings": {
           }
         },
+        "collection-row-1": {
+          "type": "collection-rows",
+          "settings": {
+            "home_featured_row": "",
+            "grid": 4,
+            "rows": 1
+          }
+        },
+        "collection-row-2": {
+          "type": "collection-rows",
+          "settings": {
+            "home_featured_row": "",
+            "grid": 4,
+            "rows": 1
+          }
+        },
+        "collection-row-3": {
+          "type": "collection-rows",
+          "settings": {
+            "home_featured_row": "",
+            "grid": 4,
+            "rows": 1
+          }
+        },
         "featured-content": {
           "type": "featured-content",
+          "settings": {
+          }
+        },
+        "slideshow-2": {
+          "type": "slideshow",
+          "blocks": {
+            "slideshow-2-0": {
+              "type": "image",
+              "settings": {
+                "slide": ""
+              }
+            }
+          },
+          "block_order": [
+            "slideshow-2-0"
+          ],
           "settings": {
           }
         }
       },
       "content_for_index": [
-
+        "slideshow",
+        "collection-list",
+        "collection-row-1",
+        "collection-row-2",
+        "collection-row-3",
+        "slideshow-2",
+        "featured-content"
       ]
     }
   }
