@@ -603,38 +603,10 @@
           ],
           "settings": {
           }
-        },
-        "collection-row-1": {
-          "type": "collection-rows",
-          "settings": {
-            "home_featured_row": "",
-            "grid": 4,
-            "rows": 1
-          }
-        },
-        "collection-row-2": {
-          "type": "collection-rows",
-          "settings": {
-            "home_featured_row": "",
-            "grid": 4,
-            "rows": 1
-          }
-        },
-        "collection-row-3": {
-          "type": "collection-rows",
-          "settings": {
-            "home_featured_row": "",
-            "grid": 4,
-            "rows": 1
-          }
         }
       },
       "content_for_index": [
-        "slideshow",
-        "collection-list",
-        "collection-row-1",
-        "collection-row-2",
-        "collection-row-3"
+        "slideshow"
       ]
     },
     "Light": {
@@ -736,14 +708,60 @@
           "settings": {
           }
         },
+        "collection-row-1": {
+          "type": "collection-rows",
+          "settings": {
+            "home_featured_row": "",
+            "grid": 4,
+            "rows": 1
+          }
+        },
+        "collection-row-2": {
+          "type": "collection-rows",
+          "settings": {
+            "home_featured_row": "",
+            "grid": 4,
+            "rows": 1
+          }
+        },
+        "collection-row-3": {
+          "type": "collection-rows",
+          "settings": {
+            "home_featured_row": "",
+            "grid": 4,
+            "rows": 1
+          }
+        },
         "featured-content": {
           "type": "featured-content",
+          "settings": {
+          }
+        },
+        "slideshow-2": {
+          "type": "slideshow",
+          "blocks": {
+            "slideshow-2-0": {
+              "type": "image",
+              "settings": {
+                "slide": ""
+              }
+            }
+          },
+          "block_order": [
+            "slideshow-2-0"
+          ],
           "settings": {
           }
         }
       },
       "content_for_index": [
-        "slideshow"
+        "slideshow",
+        "collection-list",
+        "collection-row-1",
+        "collection-row-2",
+        "collection-row-3",
+        "slideshow-2",
+        "featured-content"
       ]
     }
   }
