@@ -29,18 +29,18 @@
       <hr{% if has_sidebar %} class="hr--offset-left"{% endif %}>
       <div class="section-header">
         <div class="section-header--right">
-          {% include 'collection-sorting' %}
-          {% include 'collection-views' %}
-          {% include 'toggle-filters' %}
+          {% render 'collection-sorting' %}
+          {% render 'collection-views' %}
+          {% render 'toggle-filters' %}
         </div>
       </div>
     {% else %}
     <header class="section-header">
       <h1 class="section-header--title section-header--left">{{ collection.title }}</h1>
       <div class="section-header--right">
-        {% include 'collection-sorting' %}
-        {% include 'collection-views' %}
-        {% include 'toggle-filters' %}
+        {% render 'collection-sorting' %}
+        {% render 'collection-views' %}
+        {% render 'toggle-filters' %}
       </div>
     </header>
     {% endif %}
@@ -49,7 +49,7 @@
 
       {% for product in collection.products %}
 
-        {% include 'product-list-item' %}
+        {% render 'product-list-item' %}
 
       {% else %}
 
