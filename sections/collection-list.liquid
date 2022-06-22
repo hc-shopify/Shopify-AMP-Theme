@@ -47,7 +47,7 @@
     {% if index > 0 %}
       {% for block in section.blocks %}
         {%- assign featured = block.settings.collection %}
-        {% include 'featured-collection' with width: width, height: height %}
+        {% render 'featured-collection' with width: width, height: height %}
       {% endfor %}
     {% comment %}
     {% else %}
@@ -56,7 +56,7 @@
         {% unless index >= 6 %}
           {% unless collection.handle == 'frontpage' %}
             {%- assign featured = collection.handle %}
-            {% include 'featured-collection' %}
+            {% render 'featured-collection' %}
             {%- assign index = index | plus: 1 %}
           {% endunless %}
         {% endunless %}
