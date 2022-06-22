@@ -23,7 +23,7 @@
             {% capture wrapper_id %}collectionImageWrapper-{{ section.id }}--{{ collection_image.id }}{% endcapture %}
             {%- assign img_url = collection_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
             {% unless collection_image == blank %}
-              {% include 'image-style' with image: collection_image, width: width, height: height, small_style: false, wrapper_id: wrapper_id %}
+              {% render 'image-style' with image: collection_image, width: width, height: height, small_style: false, wrapper_id: wrapper_id %}
             {% endunless %}
             <div id="{{ wrapper_id }}" class="lazyload__image-wrapper no-js">
               <div {% if collection_image != blank %}style="padding-top:{{ 1 | divided_by: collection_image.aspect_ratio | times: 100}}%;"{% endif %}>
