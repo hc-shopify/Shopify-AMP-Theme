@@ -38,7 +38,21 @@
   <div class="fix-bar">
   </div> 
 
-  
+  {% if section.settings.show_announcement %}
+    <div class="announcement-bar">
+      {% if section.settings.announcement_link %}
+      <a href="{{ section.settings.announcement_link }}">
+      {% endif %}
+       <span class="announcement-bar-text">{{ section.settings.announcement_text | escape }}</span>
+      {% if section.settings.announcement_link %} 
+      </a>
+      {% endif %}
+    </div>
+  {% endif %}
+
+  {% if section.settings.show_breadcrumb %} 
+     {% include 'breadcrumb' %}
+  {% endif %}
 </header>  
 
 {% schema %}
