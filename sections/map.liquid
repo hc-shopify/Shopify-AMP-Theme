@@ -40,7 +40,7 @@
     <div class="map-section__content map-section__background-wrapper">
       {% if section.settings.image %}
         <div class="map-section__image map-section__image--{{ section.id }} supports-js lazyload"
-            data-bgset="{% include 'bgset', image: section.settings.image %}"
+            data-bgset="{% render 'bgset', image: section.settings.image %}"
             data-sizes="auto"
             data-parent-fit="cover">
         </div>
