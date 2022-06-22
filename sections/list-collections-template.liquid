@@ -39,11 +39,11 @@
       {% for collection in list_collections %}
         {% unless collection.handle == 'frontpage' %}
           {% if section.settings.layout == 'list' %}
-            {% include 'collection-list-item' %}
+            {% render 'collection-list-item' %}
             {% unless forloop.last %}<hr>{% endunless %}
           {% else %}
             {% assign featured = collection.handle %}
-            {% include 'featured-collection' %}
+            {% render 'featured-collection' %}
           {% endif %}
         {% endunless %}
       {% endfor %}
@@ -53,11 +53,11 @@
       {% for collection in list_collections reversed %}
         {% unless collection.handle == 'frontpage' %}
           {% if section.settings.layout == 'list' %}
-            {% include 'collection-list-item' %}
+            {% render 'collection-list-item' %}
             {% unless forloop.last %}<hr>{% endunless %}
           {% else %}
             {% assign featured = collection.handle %}
-            {% include 'featured-collection' %}
+            {% render 'featured-collection' %}
           {% endif %}
         {% endunless %}
       {% endfor %}
@@ -68,11 +68,11 @@
     {% for block in section.blocks %}
       {% if section.settings.layout == 'list' %}
         {% assign collection = collections[block.settings.collection] %}
-        {% include 'collection-list-item' %}
+        {% render 'collection-list-item' %}
         {% unless forloop.last %}<hr>{% endunless %}
       {% else %}
         {% assign featured = block.settings.collection %}
-        {% include 'featured-collection' %}
+        {% render 'featured-collection' %}
       {% endif %}
     {% endfor %}
   </div>

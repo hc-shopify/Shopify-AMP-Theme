@@ -23,7 +23,7 @@
   {% endif %}  
   
   <div id="nav-search-bar" class="nav-search-bar">
-    {% include 'search-bar' %}
+    {% render 'search-bar' %}
   </div>
   
   <a href="#nav-search-bar">
@@ -67,7 +67,7 @@
       </ul>
       
       <span class="align-center">
-        {% include 'search-bar' %}
+        {% render 'search-bar' %}
       </span>
       
       
@@ -113,7 +113,7 @@
   {% if shop.customer_accounts_enabled %}
   <li class="btn__account">
     <a href="/account{% unless customer %}/login{% endunless %}">
-      <span class="icon" aria-hidden="true">{% include 'svg' with 'account' %}</span>
+      <span class="icon" aria-hidden="true">{% render 'svg' with 'account' %}</span>
       <span class="text">{{ 'layout.navigation.my_account' | t }}</span>
     </a>
   </li>

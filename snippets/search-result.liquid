@@ -22,20 +22,20 @@
     {% if item.compare_at_price > item.price %}
       <li>
         <span id="productPrice" class="h1">
-          {% include 'price' with item.price %}
+          {% render 'price' with item.price %}
         </span>
       </li>
       <li>
         <span id="comparePrice" class="sale-tag large">
           {% assign compare_price = item.compare_at_price %}
           {% assign product_price = item.price %}
-          {% include 'price-sale' %}
+          {% render 'price-sale' %}
         </span>
       </li>
     {% else %}
       <li>
         <span id="productPrice" class="h1">
-          {% include 'price' with item.price %}
+          {% render 'price' with item.price %}
         </span>
       </li>
     {% endif %}

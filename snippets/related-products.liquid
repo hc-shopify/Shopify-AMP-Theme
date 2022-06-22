@@ -22,7 +22,7 @@
         {% assign current_product_found = true %}
       {% else %}
         {% unless current_product_found == false and forloop.last %}
-          {% include 'product-grid-item' %}
+          {% render 'product-grid-item' %}
         {% endunless %}
       {% endif %}
     {% endfor %}

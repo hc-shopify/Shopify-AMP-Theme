@@ -24,7 +24,7 @@
     {% for link in linklists[page.handle].links %}
       {% if link.type == 'collection_link' %}
         {% assign featured = link.object.handle %}
-        {% include 'featured-collection' %}
+        {% render 'featured-collection' %}
       {% endif %}
     {% endfor %}
 

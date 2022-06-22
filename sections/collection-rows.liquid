@@ -46,7 +46,7 @@
   <div class="grid-uniform row-negative-bottom">
     {% for product in collections[featured_row].products limit: product_limit %}
       {% assign current_collection = collections[featured_row] %}
-        {% include 'product-grid-item' %}
+        {% render 'product-grid-item' %}
     {% endfor %}
   </div>
 

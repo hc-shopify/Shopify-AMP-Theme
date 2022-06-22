@@ -18,7 +18,7 @@
         <p style="font-size:2em;text-align:right;" onclick="getElementById('add_address').style.display='none';">&#9746;</p>
    
       {% form 'customer_address', customer.new_address %}
-           {% include 'form-errors-custom' %}
+           {% render 'form-errors-custom' %}
           
             <div class="col-12">
               <label for="address_first_name_new">{{ 'customer.addresses.first_name' | t }}</label>
@@ -127,7 +127,7 @@
             {% form 'customer_address', address %}
 			  <p style="font-size:2em;text-align:right;" onclick="Shopify.CustomerAddress.toggleForm({{ form.id }}); return false;">&#9746;</p>
               <h3>{{ 'customer.addresses.edit_address' | t }}</h3>
-              {% include 'form-errors-custom' %}
+              {% render 'form-errors-custom' %}
                 <div class="col-12">
                   <label for="address_first_name_{{ form.id }}">{{ 'customer.addresses.first_name' | t }}</label>
                   <br>
@@ -205,7 +205,7 @@
 
         {% if paginate.pages > 1 %}
         <div class="col-12">
-          {% include 'pagination-custom' %}
+          {% render 'pagination-custom' %}
         </div>
         
         {% endif %}

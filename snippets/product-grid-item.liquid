@@ -67,12 +67,12 @@
         {% else %}
           <span class="visually-hidden">{{ "products.general.regular_price" | t }}</span>
         {% endif %}
-        {% include 'price' with product.price %}
+        {% render 'price' with product.price %}
         {% if on_sale and section.settings.product_show_compare_at_price %}
           <small>
             <s>
               <span class="visually-hidden">{{ "products.general.regular_price" | t }}</span>
-              {% include 'price' with product.compare_at_price %}
+              {% render 'price' with product.compare_at_price %}
             </s>
           </small>
         {% endif %}
@@ -82,7 +82,7 @@
         <span class="sale-tag{% unless section.settings.show_compare_at_price %} medium--right{% endunless %}{% if section.settings.product_reviews_enable %} has-reviews{% endif %}">
           {% assign compare_price = product.compare_at_price %}
           {% assign product_price = product.price %}
-          {% include 'price-sale' %}
+          {% render 'price-sale' %}
         </span>
       {% endif %}
     </div>
