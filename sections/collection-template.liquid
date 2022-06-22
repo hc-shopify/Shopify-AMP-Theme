@@ -13,7 +13,7 @@
 
   {% if has_sidebar %}
   <aside class="sidebar grid-item large--one-fifth collection-filters" id="collectionFilters">
-    {% include 'collection-sidebar' %}
+    {% render 'collection-sidebar' %}
   </aside>
   {% endif %}
 
@@ -32,18 +32,18 @@
       <hr{% if has_sidebar %} class="hr--offset-left"{% endif %}>
       <div class="section-header">
         <div class="section-header--right">
-          {% include 'collection-sorting' %}
-          {% include 'collection-views' %}
-          {% include 'toggle-filters' %}
+          {% render 'collection-sorting' %}
+          {% render 'collection-views' %}
+          {% render 'toggle-filters' %}
         </div>
       </div>
     {% else %}
     <header class="section-header">
       <h1 class="section-header--title section-header--left h1">{{ collection.title }}</h1>
       <div class="section-header--right">
-        {% include 'collection-sorting' %}
-        {% include 'collection-views' %}
-        {% include 'toggle-filters' %}
+        {% render 'collection-sorting' %}
+        {% render 'collection-views' %}
+        {% render 'toggle-filters' %}
       </div>
     </header>
     {% endif %}
@@ -80,7 +80,7 @@
           {% assign grid_item_width = 'large--one-fifth medium--one-third small--one-half' %}
         {% endif %}
         {% endcomment %}
-        {% include 'product-grid-item' with grid_item_width %}
+        {% render 'product-grid-item' with grid_item_width %}
 
       {% else %}
 
@@ -99,7 +99,7 @@
     <div class="grid">
       <div class="grid-item{% if has_sidebar %} large--four-fifths push--large--one-fifth{% endif %}">
           <div class="text-center">
-            {% include 'pagination-custom' %}
+            {% render 'pagination-custom' %}
           </div>
       </div>
     </div>
