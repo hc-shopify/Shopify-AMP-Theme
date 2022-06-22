@@ -10,7 +10,7 @@
       
     {% form 'customer_login' %}
        <h1>{{ 'customer.login.title' | t }}</h1>
-      {% include 'form-errors-custom' %}
+      {% render 'form-errors-custom' %}
       <div class="col-12">
       <label for="customer_email">{{ 'customer.login.email' | t }}</label>
       <br>
@@ -48,7 +48,7 @@
 
       {% form 'recover_customer_password' %}
 
-        {% include 'form-errors-custom' %}
+        {% render 'form-errors-custom' %}
 
         {% if form.posted_successfully? %}
           {% assign reset_success = true %}
